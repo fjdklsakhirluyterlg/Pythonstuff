@@ -67,11 +67,16 @@ def runcpp():
         return
     dir_path = os.path.dirname(os.path.realpath(file_path))
     file_name = file_path.replace(f"{dir_path}/", "")
-    command = f' cd "{dir_path}" && g++ {file_name} -o {file_name[:-4]} && "{dir_path}/"{file_name}'
+    command = f' cd "{dir_path}" && g++ {file_name} -o runner.exe'
+    command2 = "./runner.exe"
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    process2 = subprocess.Popen(command2, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     output, error = process.communicate()
+    output2, error2 = process2.communicate()
     code_output.insert('1.0', output)
     code_output.insert('1.0',  error)
+    code_output.insert('1.0', output2)
+    code_output.insert('1.0',  error2)
 
 menu_bar = Menu(compiler)
 
