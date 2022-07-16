@@ -17,7 +17,7 @@ wait = WebDriverWait(driver, 900)
  
 # Replace 'Friend's Name' with the name of your friend
 # or the name of a group
-target = '"Phillip"'
+target = '"Philip"'
  
 # Replace the below string with your own message
 string = "Message sent using Python test, sorry you were the first person to randomly choose"
