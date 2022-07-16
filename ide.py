@@ -96,7 +96,7 @@ pybutton.pack()
 jsbutton = Button(compiler, text="Run javascript", command=runjs)
 jsbutton.pack()
 
-cppbutton = Button(compiler, text="Run c plus plus", command=runcpp)
+cppbutton = Button(compiler, text="Run c++", command=runcpp)
 cppbutton.pack()
 
 editor = Text(height=20, width=100)
