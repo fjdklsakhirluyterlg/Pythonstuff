@@ -15,6 +15,7 @@ class Vector:
 
     return Vector(self.x + V.x, self.y + V.y, self.z + V.z)
 
+  # Method to subtract 2 Vectors
   def __sub__(self, V):
 
     return Vector(self.x - V.x, self.y - V.y, self.z - V.z)
