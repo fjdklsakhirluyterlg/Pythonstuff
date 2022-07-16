@@ -1,26 +1,20 @@
-# Python3 program to implement 3-D Vectors.
 from math import sqrt
 
-# Definition of Vector class
 class Vector:
 
-  # Initialize 3D Coordinates of the Vector
   def __init__(self, x, y, z):
     self.x = x
     self.y = y
     self.z = z
 
-  # Method to calculate magnitude of a Vector
   def magnitude(self):
 
     return sqrt(self.x ** 2 + self.y ** 2 + self.z ** 2)
 
-  # Method to add to Vector
   def __add__(self, V):
 
     return Vector(self.x + V.x, self.y + V.y, self.z + V.z)
 
-  # Method to subtract 2 Vectors
   def __sub__(self, V):
 
     return Vector(self.x - V.x, self.y - V.y, self.z - V.z)
