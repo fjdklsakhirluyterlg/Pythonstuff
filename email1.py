@@ -38,7 +38,7 @@ def get_bitcoin():
 def send_email():
     sender_email = "drive.banerjee.armaan@gmail.com"
     receiver_email = "banerjee.armaan@gmail.com"
-    password = "Transport11."
+    password = "ixsrblyncyrupttv"
     message = EmailMessage()
     message["From"] = sender_email
     message["To"] = receiver_email
