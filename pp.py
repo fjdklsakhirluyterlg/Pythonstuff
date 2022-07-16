@@ -13,7 +13,7 @@ while True:
         
         
         def ping(host):
-            param = '-n'  if platform.system().lower() == 'windows' else '-c'
+            param = '-c'
             command = ['ping', param, num, host]
             return subprocess.call(command)
         print(ping(host))
