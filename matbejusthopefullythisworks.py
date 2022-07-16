@@ -11,4 +11,4 @@ mapp = folium.Map(location=[earthquake_locations.latitude.mean(), earthquake_loc
 for location_info in earthquake_locations.iterrows():
     folium.Marker([location_info["latitude"], location_info["longitude"]], popup=location_info["mag"]).add_to(mapp)
 
-mapp.save(hopefullythisworks.html)
+mapp.save("hopefullythisworks.html")
