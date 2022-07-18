@@ -1,4 +1,4 @@
-z = int(integer("Enter a number: "))
+z = int("Enter a number: ")
 
 def collatz(x):
     z = x
