@@ -1,10 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = "https://www.google.com/search?q=bugatti"
+URL = "https://www.bbc.co.uk/news"
 response  = requests.get(URL)
 
 soup = BeautifulSoup(response.content, "html.parser")
-result = soup.find_all("h3", "LC20lb MBeuO DKV0Md")
+result = soup.find_all("a", {'class': "gs-c-promo-heading nw-o-link gs-o-bullet__text gs-o-faux-block-link__overlay-link gel-pica-bold gs-u-pl-@xs"}, href=True, )
 
-print(result)
+for i in result:
+    print(i)
+
