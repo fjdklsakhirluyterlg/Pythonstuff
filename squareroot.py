@@ -8,7 +8,6 @@ def sqrt(x):
         z = i
         i += 1
     
-    return z + 1
-
     
-print(sqrt())
+    
+    return z + 1
