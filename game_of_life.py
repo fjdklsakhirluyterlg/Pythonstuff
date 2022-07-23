@@ -1,7 +1,6 @@
 import pygame
 import numpy as np
 import random
-import time
 
 class Grid:
     def __init__(self, width, height, scale, offset):
